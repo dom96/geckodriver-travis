@@ -26,4 +26,4 @@ before_script:
   - export PATH=$HOME/.nimble/bin:$PATH
 
 script:
-  - nimble test
+  - nimble -y test
