@@ -26,4 +26,5 @@ before_script:
   - export PATH=$HOME/.nimble/bin:$PATH
 
 script:
+  - export MOZ_HEADLESS=1
   - nimble -y test
