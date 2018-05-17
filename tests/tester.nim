@@ -12,7 +12,7 @@ proc runProcess(cmd: string) =
   )
 
   let o = p.outputStream
-  while p.running:
+  while p.running and (not o.atEnd):
     echo cmd.substr(0, 10), ": ", o.readLine()
 
   p.close()

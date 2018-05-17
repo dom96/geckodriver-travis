@@ -26,5 +26,4 @@ before_script:
   - export PATH=$HOME/.nimble/bin:$PATH
 
 script:
-  - geckodriver -p 4444 &
   - nimble test

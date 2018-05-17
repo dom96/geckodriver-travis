@@ -16,4 +16,4 @@ requires "jester 0.2.0"
 requires "webdriver"
 
 task test, "Runs web driver test":
-  exec "nim c -r tests/tester"
+  exec "nimble c -r tests/tester"
